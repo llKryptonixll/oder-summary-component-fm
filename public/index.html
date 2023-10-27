@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Order summary card</title>
+</head>
+<body>
+  <main class="bg-pale_blue min-h-screen relative grid place-items-center sm:pt-0 sm:pb-0 pt-6 pb-6">
+    <div class="absolute w-full self-start">
+      <img class="sm:block hidden w-full" src="images/pattern-background-desktop.svg" alt="pattern-background-image">
+      <img class="sm:hidden block w-full" src="images/pattern-background-mobile.svg" alt="pattern-background-image">
+    </div>
+
+    <section class="relative z-30 bg-white sm:w-[450px] w-[90%] sm:h-[700px] h-[600px] grid grid-rows-[30%,45%,25%] rounded-2xl shadow-[0px_35px_20px_rgba(56,41,224,0.1)]">
+      <div>
+        <img class="rounded-t-2xl h-full w-full" src="images/illustration-hero.svg" alt="hero-illustration-image">
+      </div>
+
+      <div class="h-full grid sm:pl-12 sm:pr-12 pl-6 pr-6  content-center gap-12">
+        <div class="grid gap-5">
+          <p class="text-dark_blue font-bold text-3xl text-center">Order Summary</p>
+          <p class="text-center text-desaturated_blue">
+            You can now listen to millions of songs, audiobooks, and podcasts on any 
+            device anywhere you like!
+          </p>
+        </div>
+
+        <div class="flex w-full justify-center items-center sm:space-x-20 space-x-10">
+          <div class="flex space-x-5">
+            <div>
+              <img src="images/icon-music.svg" alt="music-note-icon">
+            </div>
+            <div>
+              <p class="font-bold text-dark_blue">Annual Plan</p>
+              <span class="text-desaturated_blue">$59.99/year</span>
+            </div>
+          </div>
+          <a class="text-bright_blue font-semibold underline hover:text-opacity-80 transition-colors hover:no-underline" href="#">Change</a>
+        </div>
+      </div>
+
+      <div class="h-full grid sm:pr-12 sm:pl-12 pl-6 pr-6 content-center gap-6">
+        <button class="bg-bright_blue h-[50px] rounded-xl text-white font-medium hover:bg-opacity-80 transition-colors shadow-[0_20px_10px_rgba(56,41,224,0.2)]">Proceed to Payment</button>
+        <button class="text-desaturated_blue font-bold hover:text-dark_blue transition-colors">Cancel Order</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
